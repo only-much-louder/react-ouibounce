@@ -33,6 +33,14 @@ class ReactOuibounce extends React.Component {
     })
   }
 
+  handleDismiss = () => {
+    // disable the ouibounce when child modal
+    // is closed
+    if (this.state.handler) {
+      this.state.handler.disable()
+    }
+  }
+
   componentDidMount() {
     this.setupOuibounce()
   }
@@ -49,6 +57,7 @@ class ReactOuibounce extends React.Component {
     const childEl = React.Children.only(this.props.children)
     const childElWithModalState = React.cloneElement(childEl, {
       shouldDisplay : this.state.open,
+      handleDismiss : this.handleDismiss,
     })
     return childElWithModalState
   }
