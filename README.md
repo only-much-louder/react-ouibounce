@@ -13,7 +13,7 @@ Usage
 
 import ReactOuibounce from 'react-ouibounce'
 
-<ReactOuibounce>
+<ReactOuibounce cookieName="test-event" cookieExpire={600} aggressive={true}>
   <div className="modal">
     Check out this cool offer
   </div>
