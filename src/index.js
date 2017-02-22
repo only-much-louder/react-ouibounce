@@ -39,6 +39,9 @@ class ReactOuibounce extends React.Component {
     if (this.state.handler) {
       this.state.handler.disable()
     }
+    this.setState({
+      open : false,
+    })
   }
 
   componentDidMount() {
