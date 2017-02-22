@@ -4,7 +4,21 @@
 [![npm package][npm-badge]][npm]
 [![Coveralls][coveralls-badge]][coveralls]
 
-Describe react-ouibounce here.
+Wraps the [ouibounce](https://github.com/carlsednaoui/ouibounce) library in a React component.
+
+Ouibounce lets you trigger a UI element (such as a modal) when a user is about to leave the page
+
+Usage
+```jsx
+
+import ReactOuibounce from 'react-ouibounce'
+
+<ReactOuibounce>
+  <div className="modal">
+    Check out this cool offer
+  </div>
+</ReactOuibounce>
+```
 
 [build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
 [build]: https://travis-ci.org/user/repo
