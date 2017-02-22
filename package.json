@@ -29,11 +29,14 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
-  "author": "",
+  "author": "Neehar Venugopal <neeharv@gmail.com>",
   "homepage": "",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/only-much-louder/react-ouibounce",
   "keywords": [
-    "react-component"
+    "react-component",
+	"ouibounce",
+	"modal",
+	"react"
   ]
 }
