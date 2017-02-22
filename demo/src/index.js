@@ -1,15 +1,27 @@
 import React from 'react'
-import {render} from 'react-dom'
+import { render } from 'react-dom'
 
-import Component from '../../src'
+import ReactOuibounce from '../../src'
 
-let Demo = React.createClass({
+const TestModal = (props) => (
+  <div>
+    <p>
+      Hi, don't leave please - {`${props.shouldDisplay}`}
+    </p>
+  </div>
+)
+
+class Demo extends React.Component {
   render() {
-    return <div>
-      <h1>react-ouibounce Demo</h1>
-      <Component/>
-    </div>
+    return (
+      <ReactOuibounce
+        cookieName="test-event"
+        cookieExpire={600}
+      >
+        <TestModal />
+      </ReactOuibounce>
+    )
   }
-})
+}
 
-render(<Demo/>, document.querySelector('#demo'))
+render(<Demo />, document.querySelector('#demo'))
