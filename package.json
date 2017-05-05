@@ -19,15 +19,16 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
-    "ouibounce": "0.0.12"
+    "ouibounce": "0.0.12",
+    "prop-types": "^15.5.8"
   },
   "peerDependencies": {
     "react": "15.x"
   },
   "devDependencies": {
     "nwb": "0.15.x",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   },
   "author": "Neehar Venugopal <neeharv@gmail.com>",
   "homepage": "",
