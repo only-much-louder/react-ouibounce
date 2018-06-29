@@ -1,17 +1,18 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import ouibounce from 'ouibounce'
 
 class ReactOuibounce extends React.Component {
 
   static propTypes = {
-    sensitivity : React.PropTypes.number,
-    aggressive : React.PropTypes.bool,
-    timer : React.PropTypes.number,
-    delay : React.PropTypes.number,
-    cookieExpire : React.PropTypes.number,
-    cookieName : React.PropTypes.string,
-    cookieDomain : React.PropTypes.string,
-    sitewide : React.PropTypes.bool,
+    sensitivity : PropTypes.number,
+    aggressive : PropTypes.bool,
+    timer : PropTypes.number,
+    delay : PropTypes.number,
+    cookieExpire : PropTypes.number,
+    cookieName : PropTypes.string,
+    cookieDomain : PropTypes.string,
+    sitewide : PropTypes.bool,
   }
 
   state = {
